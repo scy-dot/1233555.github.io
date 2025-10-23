@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>数字展销平台首页</title>
+    <style>
+        header {
+            width: 100%;
+            background-color: rgb(48, 47, 47);
+            padding: 10px 20px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .loge {
+            float: left;
+            align-items: center;
+            display: flex;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .box {
+            background-color: rgb(48, 47, 47);
+            float: right;
+            text-align: center;
+            width: 180px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        .t {
+            float: left;
+            font-size: 30px;
+            color: #d4d0d0;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+
+        .left {
+            text-align: center;
+            width: 15%;
+            height: 100%;
+            font-size: 25px;
+            position: relative;
+            background-color: #393737;
+            top: 5px;
+            float: left;
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li:hover {
+            background-color: rgb(87, 86, 86);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgb(87, 86, 86);
+        }
+
+        a {
+            text-decoration: none;
+            color: #b1aeae;
+        }
+
+        a:hover {
+            color: #ca9595;
+        }
+
+        .banner {
+            border: 2px solid #898686;
+            width: 65%;
+            float: left;
+            background-color: #d4d0d0;
+            border-radius: 10px;
+        }
+
+        .img {
+            height: 200px;
+            width: 530px;
+            float: left;
+        }
+
+        .buy {
+            background-color: rgb(101, 203, 0);
+            width: 100px;
+            text-align: center;
+            float: left;
+            position: relative;
+            left: 190px;
+            top: 10px;
+            border-radius: 20px;
+        }
+
+        .buy1 {
+            background-color: rgb(101, 203, 0);
+            width: 100px;
+            text-align: center;
+            float: left;
+            position: relative;
+            left: 10px;
+            top: -5px;
+            border-radius: 20px;
+        }
+
+        .buy:hover {
+            background-color: rgb(133, 191, 111);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgb(98, 191, 93);
+            cursor: pointer;
+        }
+
+        .buy1:hover {
+            background-color: rgb(133, 191, 111);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgb(98, 191, 93);
+            cursor: pointer;
+        }
+
+        .jianjie {
+            background-color: #d4d0d0;
+        }
+
+        .xinshu {
+            width: 70%;
+        }
+
+        table td,
+        th {
+
+            border: 2px solid #ada9a9;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .right {
+            float: right;
+            width: 19.5%;
+            background-color: #ada9a9;
+            border-radius: 10px;
+        }
+
+        .MSZ {
+            float: left;
+        }
+
+        .MSY {
+
+            float: right;
+        }
+
+        .TUP {
+            width: 150px;
+            height: 160px;
+        }
+
+      
+    </style>
+</head>
+
+<body style="background-color: rgb(87, 86, 86);">
+    <header>
+        <div id="loge">
+            <img src="image/屏幕截图 2025-10-21 160048.png" class="logo">
+            <div class="t">数字展销平台</div>
+        </div>
+        <div class="box"><a href="#">关于我们</a></div>
+        <div class="box"><a href="#">帮助 / 客服</a></div>
+        <div class="box"><a href="#">购物车</a></div>
+        <div class="box"><a href="#">登录 / 注册</a></div>
+        <div class="box"><a href="#">分类</a></div>
+        <div class="box"><a href="#">首页</a></div>
+
+    </header>
+    <div class="left">
+        <h3>图书分类</h3>
+        <ul>
+            <li><a href="#">小说</a></li>
+            <li><a href="#">散文</a></li>
+            <li><a href="#">传记</a></li>
+            <li><a href="#">诗歌</a></li>
+            <li><a href="#">历史</a></li>
+            <li><a href="#">地理</a></li>
+            <li><a href="#">经典名著</a></li>
+            <li><a href="#">运动 / 健身</a></li>
+            <li><a href="#">书法 / 篆刻</a></li>
+            <li><a href="#">科普 / 百科</a></li>
+            <li><a href="#">美食 / 烹饪</a></li>
+            <li><a href="#">古籍 / 经典</a></li>
+            <li><a href="#">早教 / 启蒙</a></li>
+            <li><a href="#">政治 / 军事</a></li>
+        </ul>
+    </div>
+    <div class="banner">
+        <h1>图书展示区</h1>
+        <hr>
+        <h2>热门推荐</h2>
+        <hr>
+        <div class="img"><img src="image/O1CN01JXSrRS1CP1HcgQpqL-101450072.avif"
+                title="《百年孤独》是加西亚・马尔克斯创作的魔幻现实主义文学经典，以布恩迪亚家族七代人的兴衰为主线，讲述了一个虚构小镇 “马孔多” 从诞生到消失的百年历史。">
+            <div class="jianjie">
+                <p>《百年孤独》是加西亚・马尔克斯创作的魔幻现实主义文学经典，以布恩迪亚家族七代人的兴衰为主线，讲述了一个虚构小镇 “马孔多” 从诞生到消失的百年历史。</p>
+                <div class="jiage">
+                    <p style="color: #ff0000;">价格:68元</p>
+                </div>
+                <div class="buy">加入购物车</div>
+            </div>
+        </div>
+        <div class="img"><img src="image/OIP-C.webp"
+                title="《红楼梦》是清代曹雪芹所著，以贾、史、王、薛四大家族兴衰为背景，描写贾宝玉、林黛玉、薛宝钗的爱情悲剧剧，是中国古典小说的巅峰之作。">
+            <div class="jianjie">
+                <p>《红楼梦》是清代曹雪芹所著，以贾、史、王、薛四大家族兴衰为背景，描写贾宝玉、林黛玉、薛宝钗的爱情悲剧剧，是中国古典小说的巅峰之作。</p>
+                <div class="jiage">
+                    <p style="color: #ff0000;">价格:58元</p>
+                </div>
+                <div class="buy">加入购物车</div>
+            </div>
+        </div>
+        <div class="img"><img src="image/OIP-C (1).webp"
+                title="《平凡的世界》是路遥创作的现实主义长篇小说，以 1975 到 1985 年的中国城乡社会变迁为背景，聚焦普通人在时代浪潮中的奋斗与成长">
+            <div class="jianjie">
+                <p>《平凡的世界》是路遥创作的现实主义长篇小说，以 1975 到 1985 年的中国城乡社会变迁为背景，聚焦普通人在时代浪潮中的奋斗与成长</p>
+                <div class="jiage">
+                    <p style="color: #ff0000;">价格:78元</p>
+                </div>
+                <div class="buy">加入购物车</div>
+            </div>
+        </div>
+        <div class="img"><img src="image/OIP-C (2).webp"
+                title="《西游记》是中国古典四大名著之一，由吴承恩创作，以唐代玄奘西行取经为蓝本，讲述了唐僧师徒历经磨难、西天取真经的神魔故事。">
+            <div class="jianjie">
+                <p>《西游记》是中国古典四大名著之一，由吴承恩创作，以唐代玄奘西行取经为蓝本，讲述了唐僧师徒历经磨难、西天取真经的神魔故事。</p>
+                <div class="jiage">
+                    <p style="color: #ff0000;">价格:64元</p>
+                </div>
+                <div class="buy">加入购物车</div>
+            </div>
+        </div>
+        <div class="img"><img src="image/OIP-C (3).webp"
+                title="《三国演义》是罗贯中以东汉末年至西晋初年的历史为蓝本创作的古典四大名著之一，以 “拥刘反曹” 为倾向，讲述了魏、蜀、吴三国争霸的百年风云。">
+            <div class="jianjie">
+                <p>《三国演义》是罗贯中以东汉末年至西晋初年的历史为蓝本创作的古典四大名著之一，以 “拥刘反曹” 为倾向，讲述了魏、蜀、吴三国争霸的百年风云。</p>
+                <div class="jiage">
+                    <p style="color: #ff0000;">价格:66元</p>
+                </div>
+                <div class="buy">加入购物车</div>
+            </div>
+        </div>
+        <div class="img"><img src="image/OIP-C (4).webp"
+                title="《活着》是余华创作的现实主义小说，以农民福贵的人生经历为主线，讲述了一个人在时代变迁中失去所有亲人，最终与一头老牛相伴的生命故事。">
+            <div class="jianjie">
+                <p>《活着》是余华创作的现实主义小说，以农民福贵的人生经历为主线，讲述了一个人在时代变迁中失去所有亲人，最终与一头老牛相伴的生命故事。</p>
+                <div class="jiage">
+                    <p style="color: #ff0000;">价格:48元</p>
+                </div>
+                <div class="buy">加入购物车</div>
+            </div>
+        </div>
+        <div class="xinshu">
+            <hr>
+            <h2>新书上架</h2>
+            <hr>
+            <table>
+                <tr>
+                    <td>
+                        <div class="img"><img src="image/OIP-C (5).webp"
+                                title="《三体》是刘慈欣创作的科幻小说三部曲，也是中国科幻文学的里程碑之作。它以地球文明与外星文明 “三体文明” 的接触为主线，探讨了文明存续、人性、宇宙法则等深层问题。">
+                            <div class="jianjie">
+                                <p>《三体》是刘慈欣创作的科幻小说三部曲，也是中国科幻文学的里程碑之作。它以地球文明与外星文明 “三体文明” 的接触为主线，探讨了文明存续、人性、宇宙法则等深层问题。</p>
+                                <div class="jiage">
+                                    <p style="color: #ff0000;">价格:108元</p>
+                                </div>
+                                <div class="buy">加入购物车</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="img"><img src="image/OIP-C (6).webp"
+                                title="《万历十五年》是黄仁宇以 “大历史观” 写就的明史经典，通过 1587 年这一 “无大事” 的年份，串联起关键人物的命运，揭示明朝衰落的深层原因。">
+                            <div class="jianjie">
+                                <p>《万历十五年》是黄仁宇以 “大历史观” 写就的明史经典，通过 1587 年这一 “无大事” 的年份，串联起关键人物的命运，揭示明朝衰落的深层原因。</p>
+                                <div class="jiage">
+                                    <p style="color: #ff0000;">价格:58元</p>
+                                </div>
+                                <div class="buy">加入购物车</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="img"><img src="image/s29184468.jpg"
+                                title="《大明王朝 1566》聚焦于嘉靖朝，以 “改稻为桑” 的虚构事件为核心，展现了皇权、严党与清流间的激烈博弈。">
+                            <div class="jianjie">
+                                <p>《大明王朝 1566》聚焦于嘉靖朝，以 “改稻为桑” 的虚构事件为核心，展现了皇权、严党与清流间的激烈博弈。</p>
+                                <div class="jiage">
+                                    <p style="color: #ff0000;">价格:38元</p>
+                                </div>
+                                <div class="buy">加入购物车</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="img"><img src="image/OIP-C (7).webp"
+                                title="《杀死一只知更鸟》是一部兼具成长温度与社会深度的经典，用孩子的视角撕开偏见的外壳，让 “正义” 与 “勇气” 变得可感可触。。">
+                            <div class="jianjie">
+                                <p>《杀死一只知更鸟》是一部兼具成长温度与社会深度的经典，用孩子的视角撕开偏见的外壳，让 “正义” 与 “勇气” 变得可感可触。</p>
+                                <div class="jiage">
+                                    <p style="color: #ff0000;">价格:78元</p>
+                                </div>
+                                <div class="buy">加入购物车</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2"><a href="#">展示更多</a></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="right">
+        <h1 style="text-align: center;">秋日特惠</h1>
+        <h3>限时秒杀</h3>
+        <div class="MSZ">
+            <div><img src="image/OIP-C (8).webp" class="TUP"></div>
+            <div class="jiage">
+                <h4>《被讨厌的勇气》</h4>
+                <p style="color: #ff0000;">原价:99元 现价:9.9元</p>
+            </div>
+            <div class="buy1">加入购物车</div>
+        </div>
+        <div class="MSY">
+            <div><img src="image/f95bc9e1643a4cd2b093512c85801171~tplv-a9rns2rl98-pc_smart_face_crop-v1_512_384.jpg"
+                    class="TUP"></div>
+            <div class="jiage">
+                <h6>《古代中国的传说与崇祀》</h6>
+                <p style="color: #ff0000;">原价:62元 现价:6.2元</p>
+            </div>
+            <div class="buy1">加入购物车</div>
+        </div>
+        
+        <img src="image/介绍《三体》.png" style="width: 325px; height: 300px;">
+    </div>
+
+
+</body>
