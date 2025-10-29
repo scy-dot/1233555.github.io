@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +17,7 @@
             line-height: 1.6;
         }
 
+        /* 头部样式 */
         header {
             width: 100%;
             background-color: rgb(48, 47, 47);
@@ -72,12 +72,14 @@
             transform: translateY(-2px);
         }
 
+        /* 主内容区布局 */
         .main-content {
             display: flex;
             gap: 10px;
             padding: 0 10px;
         }
 
+        /* 左侧分类栏 */
         .left {
             width: 15%;
             background-color: #393737;
@@ -127,6 +129,7 @@
             color: #ca9595;
         }
 
+        /* 中间内容区 */
         .banner {
             width: 65%;
             background-color: #d4d0d0;
@@ -135,17 +138,18 @@
             border: 2px solid #898686;
         }
 
-        h1,
-        h2 {
+        h1, h2 {
             margin-bottom: 15px;
             color: #333;
             padding-bottom: 10px;
         }
+
         hr {
             margin-bottom: 20px;
             border: 1px solid #898686;
         }
 
+        /* 热门推荐图书布局优化 */
         .books-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -210,66 +214,42 @@
             box-shadow: 0 4px 8px rgb(98, 191, 93);
         }
 
+        /* 新书上市表格样式（新样式） */
         .xinshu {
             margin-top: 30px;
+        }
+
+        .xinshu h2 {
+            margin-bottom: 15px;
         }
 
         .xinshu table {
             width: 100%;
             border-collapse: collapse;
-            background-color: #f0f0f0;
-            border-radius: 8px;
-            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .xinshu th {
-            background-color: #393737;
-            color: #d4d0d0;
-            padding: 12px;
+            background-color: #f5f7fa;
+            color: #333;
+            padding: 12px 15px;
             text-align: left;
-            font-size: 18px;
+            font-weight: 600;
+            border-bottom: 1px solid #eaeaea;
         }
 
         .xinshu td {
-            border: 2px solid #ada9a9;
-            padding: 15px;
+            padding: 12px 15px;
             vertical-align: middle;
+            border-bottom: 1px solid #eaeaea;
         }
 
-        .xinshu .book-title {
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: #333;
+        .xinshu tr:last-child td {
+            border-bottom: none;
         }
 
-        .xinshu .book-description {
-            margin-bottom: 10px;
-            color: #555;
-            font-size: 14px;
-        }
-
-        .xinshu .book-price {
-            color: #ff0000;
-            font-weight: bold;
-            margin: 8px 0;
-        }
-
-        .xinshu .show-more {
-            text-align: center;
-            background-color: #e0e0e0;
-        }
-
-        .xinshu .show-more a {
-            color: #333;
-            font-weight: bold;
-            display: block;
-            padding: 10px;
-        }
-
-        .xinshu .show-more a:hover {
-            color: #ca9595;
-        }
-
+        /* 右侧边栏 */
         .right {
             width: 20%;
             background-color: #ada9a9;
@@ -287,8 +267,7 @@
             margin-bottom: 15px;
         }
 
-        .MSZ,
-        .MSY {
+        .MSZ, .MSY {
             background-color: #f0f0f0;
             border-radius: 8px;
             padding: 10px;
@@ -330,7 +309,6 @@
         }
     </style>
 </head>
-
 <body>
     <header>
         <div class="loge">
@@ -375,66 +353,72 @@
             <hr>
             <div class="books-grid">
                 <div class="img">
-                    <img src="image/O1CN01JXSrRS1CP1HcgQpqL-101450072.avif" title="《百年孤独》是加西亚・马尔克斯创作的魔幻现实主义文学经典">
+                    <img src="image/O1CN01JXSrRS1CP1HcgQpqL-101450072.avif"
+                         title="《百年孤独》是加西亚・马尔克斯创作的魔幻现实主义文学经典">
                     <div class="jianjie">
                         <p>《百年孤独》是加西亚・马尔克斯创作的魔幻现实主义文学经典，以布恩迪亚家族七代人的兴衰为主线，讲述了一个虚构小镇 “马孔多” 从诞生到消失的百年历史。</p>
                         <div class="jiage">
-                            <p>价格:68元</p>
+                            <p>价格:¥68</p>
                         </div>
                         <div class="buy">加入购物车</div>
                     </div>
                 </div>
 
                 <div class="img">
-                    <img src="image/OIP-C.webp" title="《红楼梦》是清代曹雪芹所著，中国古典小说的巅峰之作">
+                    <img src="image/OIP-C.webp"
+                         title="《红楼梦》是清代曹雪芹所著，中国古典小说的巅峰之作">
                     <div class="jianjie">
                         <p>《红楼梦》是清代曹雪芹所著，以贾、史、王、薛四大家族兴衰为背景，描写贾宝玉、林黛玉、薛宝钗的爱情悲剧，是中国古典小说的巅峰之作。</p>
                         <div class="jiage">
-                            <p>价格:58元</p>
+                            <p>价格:¥58</p>
                         </div>
                         <div class="buy">加入购物车</div>
                     </div>
                 </div>
 
                 <div class="img">
-                    <img src="image/OIP-C (1).webp" title="《平凡的世界》是路遥创作的现实主义长篇小说">
+                    <img src="image/OIP-C (1).webp"
+                         title="《平凡的世界》是路遥创作的现实主义长篇小说">
                     <div class="jianjie">
                         <p>《平凡的世界》是路遥创作的现实主义长篇小说，以 1975 到 1985 年的中国城乡社会变迁为背景，聚焦普通人在时代浪潮中的奋斗与成长</p>
                         <div class="jiage">
-                            <p>价格:78元</p>
+                            <p>价格:¥78</p>
                         </div>
                         <div class="buy">加入购物车</div>
                     </div>
                 </div>
 
                 <div class="img">
-                    <img src="image/OIP-C (2).webp" title="《西游记》是中国古典四大名著之一">
+                    <img src="image/OIP-C (2).webp"
+                         title="《西游记》是中国古典四大名著之一">
                     <div class="jianjie">
                         <p>《西游记》是中国古典四大名著之一，由吴承恩创作，以唐代玄奘西行取经为蓝本，讲述了唐僧师徒历经磨难、西天取真经的神魔故事。</p>
                         <div class="jiage">
-                            <p>价格:64元</p>
+                            <p>价格:¥64</p>
                         </div>
                         <div class="buy">加入购物车</div>
                     </div>
                 </div>
 
                 <div class="img">
-                    <img src="image/OIP-C (3).webp" title="《三国演义》是罗贯中创作的古典四大名著之一">
+                    <img src="image/OIP-C (3).webp"
+                         title="《三国演义》是罗贯中创作的古典四大名著之一">
                     <div class="jianjie">
                         <p>《三国演义》是罗贯中以东汉末年至西晋初年的历史为蓝本创作的古典四大名著之一，以 “拥刘反曹” 为倾向，讲述了魏、蜀、吴三国争霸的百年风云。</p>
                         <div class="jiage">
-                            <p>价格:66元</p>
+                            <p>价格:¥66</p>
                         </div>
                         <div class="buy">加入购物车</div>
                     </div>
                 </div>
 
                 <div class="img">
-                    <img src="image/OIP-C (4).webp" title="《活着》是余华创作的现实主义小说">
+                    <img src="image/OIP-C (4).webp"
+                         title="《活着》是余华创作的现实主义小说">
                     <div class="jianjie">
                         <p>《活着》是余华创作的现实主义小说，以农民福贵的人生经历为主线，讲述了一个人在时代变迁中失去所有亲人，最终与一头老牛相伴的生命故事。</p>
                         <div class="jiage">
-                            <p>价格:48元</p>
+                            <p>价格:¥48</p>
                         </div>
                         <div class="buy">加入购物车</div>
                     </div>
@@ -443,73 +427,31 @@
 
             <div class="xinshu">
                 <hr>
-                <h2>新书上架</h2>
-                <hr>
+                <h2>新书上市</h2>
                 <table>
                     <tr>
-                        <th>图书信息</th>
-                        <th>图书信息</th>
+                        <th>书名</th>
+                        <th>作者</th>
+                        <th>价格</th>
+                        <th>出版日期</th>
                     </tr>
                     <tr>
-                        <td>
-                            <div class="book-title">《三体》</div>
-                            <div class="book-description">刘慈欣创作的科幻小说三部曲，也是中国科幻文学的里程碑之作。它以地球文明与外星文明 "三体文明"
-                                的接触为主线，探讨了文明存续、人性、宇宙法则等深层问题。</div>
-                            <div class="book-price">价格:108元</div>
-                            <div class="buy">加入购物车</div>
-                        </td>
-                        <td>
-                            <div class="book-title">《万历十五年》</div>
-                            <div class="book-description">黄仁宇以 "大历史观" 写就的明史经典，通过 1587 年这一 "无大事"
-                                的年份，串联起关键人物的命运，揭示明朝衰落的深层原因。</div>
-                            <div class="book-price">价格:58元</div>
-                            <div class="buy">加入购物车</div>
-                        </td>
+                        <td>星坠之前</td>
+                        <td>刘慈欣</td>
+                        <td>¥78.00</td>
+                        <td>2025年3月</td>
                     </tr>
                     <tr>
-                        <td>
-                            <div class="book-title">《大明王朝 1566》</div>
-                            <div class="book-description">聚焦于嘉靖朝，以 "改稻为桑" 的虚构事件为核心，展现了皇权、严党与清流间的激烈博弈。</div>
-                            <div class="book-price">价格:38元</div>
-                            <div class="buy">加入购物车</div>
-                        </td>
-                        <td>
-                            <div class="book-title">《杀死一只知更鸟》</div>
-                            <div class="book-description">一部兼具成长温度与社会深度的经典，用孩子的视角撕开偏见的外壳，让 "正义" 与 "勇气" 变得可感可触。</div>
-                            <div class="book-price">价格:78元</div>
-                            <div class="buy">加入购物车</div>
-                        </td>
+                        <td>南方来信</td>
+                        <td>格非</td>
+                        <td>¥65.00</td>
+                        <td>2025年5月</td>
                     </tr>
                     <tr>
-                        <td>
-                            <div class="book-title">《人类简史》</div>
-                            <div class="book-description">从认知革命、农业革命到科学革命，讲述了人类如何从一个普通的非洲灵长类动物，成为地球的主宰。</div>
-                            <div class="book-price">价格:88元</div>
-                            <div class="buy">加入购物车</div>
-                        </td>
-                        <td>
-                            <div class="book-title">《未来简史》</div>
-                            <div class="book-description">探讨了人类在解决了饥荒、疾病和战争后，未来将面临的三大议题：长生不死、幸福快乐和化身为神。</div>
-                            <div class="book-price">价格:92元</div>
-                            <div class="buy">加入购物车</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="book-title">《你当像鸟飞往你的山》</div>
-                            <div class="book-description">一部真实的回忆录，讲述了一个女孩从大山中走出，通过教育改变自己命运的故事。</div>
-                            <div class="book-price">价格:65元</div>
-                            <div class="buy">加入购物车</div>
-                        </td>
-                        <td>
-                            <div class="book-title">《云边有个小卖部》</div>
-                            <div class="book-description">刘十三的成长故事，充满了亲情、友情和爱情的温暖，描绘了普通人的悲欢离合。</div>
-                            <div class="book-price">价格:42元</div>
-                            <div class="buy">加入购物车</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="show-more" colspan="2"><a href="#">展示更多</a></td>
+                        <td>AI 2.0：创造力的边界</td>
+                        <td>尤瓦尔・赫拉利</td>
+                        <td>¥89.00</td>
+                        <td>2025年1月</td>
                     </tr>
                 </table>
             </div>
@@ -522,16 +464,15 @@
                 <img src="image/OIP-C (8).webp" class="TUP">
                 <div class="jiage">
                     <h4>《被讨厌的勇气》</h4>
-                    <p style="color: #ff0000;">原价:99元 现价:9.9元</p>
+                    <p style="color: #ff0000;">原价:¥99 现价:¥9.9</p>
                 </div>
                 <div class="buy1">加入购物车</div>
             </div>
             <div class="MSY">
-                <img src="image/f95bc9e1643a4cd2b093512c85801171~tplv-a9rns2rl98-pc_smart_face_crop-v1_512_384.jpg"
-                    class="TUP">
+                <img src="image/f95bc9e1643a4cd2b093512c85801171~tplv-a9rns2rl98-pc_smart_face_crop-v1_512_384.jpg" class="TUP">
                 <div class="jiage">
                     <h6>《古代中国的传说与崇祀》</h6>
-                    <p style="color: #ff0000;">原价:62元 现价:6.2元</p>
+                    <p style="color: #ff0000;">原价:¥62 现价:¥6.2</p>
                 </div>
                 <div class="buy1">加入购物车</div>
             </div>
@@ -539,5 +480,4 @@
         </div>
     </div>
 </body>
-
 </html>
