@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>图书推荐订阅表单</title>
+    <link rel="stylesheet" href="css/lab5-推荐表单.css">
+</head>
+
+<body>
+    <div class="dd">
+        <div class="header">
+            <h2>图书推荐订阅表单——————荐你所爱，书海添彩</h2>
+            <hr size="2px" color="000">
+        </div>
+        <div class="main">
+            <form>
+                <label for="user">姓名：</label><input type="text" id="user" placeholder="请输入您的姓名(必填)" required>
+                <label for="dh">联系电话：</label><input type="text" id="dh" placeholder="请输入您的联系电话(图书推荐通知、活动邀约)" required>
+                <label for="yx">电子邮箱：</label><input type="text" id="yx" placeholder="请输入您的邮箱地址(电子书单推送、订阅确认)" required>
+                <label for="nl">年龄区间：</label>
+                <select name="age">
+                    <option value="eag">请选择</option>
+                    <option value="18-">18岁以下</option>
+                    <option value="18-30">18-30岁</option>
+                    <option value="31-45">31-45岁</option>
+                    <option value="46-60">46-60岁</option>
+                    <option value="60+">60岁以上</option>
+                </select>
+                <p>偏好的图书类型（可多选）</p><br>
+                <div class="xq">
+                    <input type="checkbox" id="1"><label for="1">小说</label><input type="checkbox" id="2"><label
+                        for="2">历史</label><input type="checkbox" id="3"><label for="3">散文</label><input type="checkbox"
+                        id="4"><label for="4">诗歌</label><input type="checkbox" id="5"><label for="5">科幻</label><input
+                        type="checkbox" id="6"><label for="6">哲学</label><input type="checkbox" id="7"><label
+                        for="7">传记</label><input type="checkbox" id="8"><label for="8">励志</label><input type="checkbox"
+                        id="9"><label for="9">其他</label>
+                </div>
+                <p>阅读频率</p>
+                <div class="pl">
+                    <input type="radio" id="xiaoy1" name="pl"><label for="xiaoy1">每周少于1本</label><input type="radio"
+                        id="xiaoy2" name="pl"><label for="xiaoy2">每周1-2本</label><input type="radio" id="xiaoy3"
+                        name="pl"><label for="xiaoy3">每周大于3本</label>
+                </div>
+                <p>希望接收推荐书单频率</p>
+                <div class="cs">
+                    <select name="cs">
+                        <option value="xz">请选择</option>
+                        <option value="1-">每日一次</option>
+                        <option value="1-3">每周两次</option>
+                        <option value="4-5">每周一次</option>
+                        <option value="y2">每月两次</option>
+                        <option value="y1">每月一次</option>
+                        <option value="qt">其他</option>
+                    </select>
+                </div>
+                <p>其他建议及留言</p>
+                <textarea placeholder="请写下您宝贵的建议或您的想法"></textarea>
+                <p>上传头像</p>
+                <input type="file" accept="image/*">
+                <div class="jz"><input type="checkbox" id="jz"><label for="jz">已阅读并同意<a href="#">《用户隐私政策》</a>，知晓个人信息仅用于书单推荐。</label></div>
+                <input type="submit" value="提交">
+                <input type="reset" value="重置">
+            </form>
+        </div>
+    </div>
+</body>
